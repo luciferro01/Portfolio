@@ -26,8 +26,14 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
                       backgroundColor: darkColor,
                     ),
                     Center(
-                      child: Text(
-                        "${(value * 100).toInt()} %",
+                      child: Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: FittedBox(
+                          fit: BoxFit.fill,
+                          child: Text(
+                            "${(value * 100).toInt()}%",
+                          ),
+                        ),
                       ),
                     ),
                   ],

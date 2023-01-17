@@ -21,7 +21,7 @@ class Knowledge extends StatelessWidget {
         ),
         const KnowledgeText(text: "Flutter, Dart"),
         const KnowledgeText(text: "Figma"),
-        const KnowledgeText(text: "Data Structures and Algorithm"),
+        const KnowledgeText(text: "DSA"),
         const KnowledgeText(text: "Competitive "),
       ],
     );

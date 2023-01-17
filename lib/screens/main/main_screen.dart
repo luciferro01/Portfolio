@@ -11,7 +11,7 @@ class MainScreen extends StatelessWidget {
         child: Row(
           children: [
             const Expanded(
-              flex: 2,
+              flex: 3,
               child: SideMenu(),
             ),
             Expanded(

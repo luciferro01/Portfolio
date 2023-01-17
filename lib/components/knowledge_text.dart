@@ -15,11 +15,15 @@ class KnowledgeText extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: defaultPadding / 2),
       child: Row(
         children: [
-          SvgPicture.asset("assests/icons/check.svg"),
+          SvgPicture.asset("icons/check.svg"),
           const SizedBox(
             width: defaultPadding / 2,
           ),
-          Text(text),
+          Text(
+            text,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
         ],
       ),
     );
