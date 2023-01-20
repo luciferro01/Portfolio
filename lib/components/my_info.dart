@@ -18,9 +18,10 @@ class MyInfo extends StatelessWidget {
               flex: 2,
             ),
             const CircleAvatar(
+              backgroundColor: Colors.transparent,
               radius: 50,
               backgroundImage: AssetImage(
-                "images/smiling_face.jpg",
+                "images/my_project.png",
               ),
             ),
             const Spacer(),

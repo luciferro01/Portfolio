@@ -24,15 +24,15 @@ class SideMenu extends StatelessWidget {
               padding: const EdgeInsets.all(defaultPadding),
               child: Column(
                 children: [
-                  AreaInfo(
+                  const AreaInfo(
                     leadingData: "Residence",
                     trailingData: "India",
                   ),
-                  AreaInfo(
+                  const AreaInfo(
                     leadingData: "City",
                     trailingData: "Bharatpur",
                   ),
-                  AreaInfo(
+                  const AreaInfo(
                     leadingData: "Age",
                     trailingData: "19",
                   ),

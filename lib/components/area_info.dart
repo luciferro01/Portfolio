@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 
 class AreaInfo extends StatelessWidget {
-  String leadingData;
-  String trailingData;
-  AreaInfo({
+  final String leadingData;
+  final String trailingData;
+  const AreaInfo({
     required this.leadingData,
     required this.trailingData,
     Key? key,
