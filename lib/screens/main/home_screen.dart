@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../../components/my_projects.dart';
 import 'package:portfolio/screens/main/main_screen.dart';
 
 import '../../components/header.dart';
@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
     return const MainScreen(
       children: [
         Header(),
+        MyProjects(),
       ],
     );
   }

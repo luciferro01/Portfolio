@@ -4,7 +4,7 @@ class Project {
   const Project({this.title, this.description});
 }
 
-List<Project> demoPprojects = [
+List<Project> demoProjects = [
   const Project(
     title: "Responsive Admin Panel or Dashboard - Flutter UI",
     description:

@@ -12,7 +12,7 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 3,
+      aspectRatio: 2,
       child: Stack(
         fit: StackFit.expand,
         children: [
@@ -38,31 +38,34 @@ class Header extends StatelessWidget {
                 ),
                 DefaultTextStyle(
                   style: Theme.of(context).textTheme.subtitle1!,
-                  child: Row(
-                    children: [
-                      const AnimatedFlutterText(),
-                      const SizedBox(
-                        width: defaultPadding / 2,
-                      ),
-                      AnimatedTextKit(
-                        animatedTexts: [
-                          TypewriterAnimatedText(
-                            'I build  BMI calculator with dark theme',
-                            speed: const Duration(milliseconds: 60),
-                          ),
-                          TypewriterAnimatedText(
-                            'I build chat application',
-                            speed: const Duration(milliseconds: 60),
-                          ),
-                          TypewriterAnimatedText(
-                            'I build Netflix clone with light and dark mode',
-                            speed: const Duration(milliseconds: 60),
-                          ),
-                        ],
-                        // isRepeatingAnimation: true,
-                      ),
-                      const AnimatedFlutterText(),
-                    ],
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Row(
+                      children: [
+                        const AnimatedFlutterText(),
+                        const SizedBox(
+                          width: defaultPadding / 2,
+                        ),
+                        AnimatedTextKit(
+                          animatedTexts: [
+                            TypewriterAnimatedText(
+                              'I build  BMI calculator with dark theme',
+                              speed: const Duration(milliseconds: 60),
+                            ),
+                            TypewriterAnimatedText(
+                              'I build chat application',
+                              speed: const Duration(milliseconds: 60),
+                            ),
+                            TypewriterAnimatedText(
+                              'I build Netflix clone with light and dark mode',
+                              speed: const Duration(milliseconds: 60),
+                            ),
+                          ],
+                          // isRepeatingAnimation: true,
+                        ),
+                        const AnimatedFlutterText(),
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(
