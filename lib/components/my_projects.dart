@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
+import '../models/Project.dart';
+
 class MyProjects extends StatelessWidget {
   const MyProjects({
     Key? key,

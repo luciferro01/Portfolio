@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/responsive.dart';
 
 import '../constants.dart';
 import 'animated_flutter_text.dart';
@@ -29,13 +30,16 @@ class Header extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Discover my Amazing Art Space!",
-                  style: Theme.of(context).textTheme.headline3!.copyWith(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                ),
+                Text("Discover my Amazing Art Space!",
+                    style: Responsive.isDesktop(context)
+                        ? Theme.of(context).textTheme.headline3!.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            )
+                        : Theme.of(context).textTheme.headline6!.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            )),
                 DefaultTextStyle(
                   style: Theme.of(context).textTheme.subtitle1!,
                   child: FittedBox(
