@@ -21,7 +21,7 @@ class MyInfo extends StatelessWidget {
               backgroundColor: Colors.transparent,
               radius: 50,
               backgroundImage: AssetImage(
-                "images/my_project.png",
+                "assets/images/my_project.png",
               ),
             ),
             const Spacer(),

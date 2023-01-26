@@ -15,7 +15,7 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      elevation: 2.0,
+      elevation: 0.0,
       child: Column(
         children: [
           const MyInfo(),
@@ -54,7 +54,7 @@ class SideMenu extends StatelessWidget {
                           'Download Resume',
                           style: Theme.of(context).textTheme.subtitle2,
                         ),
-                        SvgPicture.asset("icons/download.svg")
+                        SvgPicture.asset("assets/icons/download.svg")
                       ],
                     ),
                   ),
@@ -69,26 +69,26 @@ class SideMenu extends StatelessWidget {
                         IconButton(
                           hoverColor: Colors.transparent,
                           onPressed: () {},
-                          icon: SvgPicture.asset("icons/linkedin.svg"),
+                          icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                         ),
                         const Spacer(),
                         IconButton(
                           hoverColor: Colors.transparent,
                           onPressed: () {},
-                          icon: SvgPicture.asset("icons/github.svg"),
+                          icon: SvgPicture.asset("assets/icons/github.svg"),
                         ),
                         const Spacer(),
                         IconButton(
                           hoverColor: Colors.transparent,
                           onPressed: () {},
-                          icon: SvgPicture.asset("icons/twitter.svg"),
+                          icon: SvgPicture.asset("assets/icons/twitter.svg"),
                         ),
                         const Spacer(),
                         IconButton(
                           hoverColor: Colors.transparent,
                           // color: Colors.transparent,
                           onPressed: () {},
-                          icon: SvgPicture.asset("icons/instagram.svg"),
+                          icon: SvgPicture.asset("assets/icons/instagram.svg"),
                         ),
                         const Spacer(),
                       ],

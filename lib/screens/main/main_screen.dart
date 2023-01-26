@@ -13,7 +13,7 @@ class MainScreen extends StatelessWidget {
       appBar: Responsive.isDesktop(context)
           ? null
           : AppBar(
-              backgroundColor: bgColor,
+              backgroundColor: Colors.transparent,
               leading: Builder(
                 builder: (context) => IconButton(
                   onPressed: () {
@@ -37,7 +37,7 @@ class MainScreen extends StatelessWidget {
               width: defaultPadding,
             ),
             Expanded(
-              flex: 7,
+              flex: 8,
               child: SingleChildScrollView(
                 child: Column(
                   children: [...children],

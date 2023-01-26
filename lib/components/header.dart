@@ -18,7 +18,7 @@ class Header extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           const Image(
-            image: AssetImage("images/bg.png"),
+            image: AssetImage("assets/images/bg.png"),
             fit: BoxFit.cover,
           ),
           Container(
@@ -72,25 +72,30 @@ class Header extends StatelessWidget {
                     ),
                   ),
                 ),
+                if (Responsive.isMobileLarge(context))
+                  const SizedBox(
+                    height: defaultPadding / 2,
+                  ),
                 const SizedBox(
                   height: defaultPadding,
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding * 2,
-                      vertical: defaultPadding,
+                if (!Responsive.isMobileLarge(context))
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: defaultPadding * 2,
+                        vertical: defaultPadding,
+                      ),
+                      backgroundColor: primaryColor,
                     ),
-                    backgroundColor: primaryColor,
-                  ),
-                  child: const Text(
-                    "Explore Now",
-                    style: TextStyle(
-                      color: darkColor,
+                    child: const Text(
+                      "Explore Now",
+                      style: TextStyle(
+                        color: darkColor,
+                      ),
                     ),
-                  ),
-                )
+                  )
               ],
             ),
           )
