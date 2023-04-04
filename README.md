@@ -1,6 +1,4 @@
-# portfolio
-
-A new Flutter project.
+## It is the trial version of the portfolio website.
 
 ## Getting Started
 
